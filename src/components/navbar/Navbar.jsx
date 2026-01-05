@@ -1,31 +1,32 @@
 import React from "react";
+import styles from "./navbar.module.css";
 
 const Navbar = () => {
   return (
-    <nav class="navbar">
+    <nav className={styles.navbar}>
       {/* <!-- Navbar --> */}
-      <div class="nav-left">
-        <button id="sidebar-toggle">
-          <i class="fas fa-bars"></i>
+      <div className={styles.navLeft}>
+        <button id={styles.sidebarToggle}>
+          <i className="fas fa-bars"></i>
         </button>
       </div>
 
-      <div class="search-bar">
-        <i class="fas fa-search"></i>
+      <div className={styles.searchBar}>
+        <i className="fas fa-search"></i>
         <input type="text" placeholder="Rechercher..." />
       </div>
 
-      <div class="nav-right">
-        <div class="nav-item">
-          <i class="fas fa-bell"></i>
-          <span class="notification-badge">3</span>
+      <div className={styles.navRight}>
+        <div className={styles.navItem}>
+          <i className="fas fa-bell"></i>
+          <span className="notification-badge">3</span>
         </div>
-        <div class="nav-item">
-          <i class="fas fa-cog"></i>
+        <div className={styles.navItem}>
+          <i className="fas fa-cog"></i>
         </div>
-        <div class="profile">
-          <img src="https://via.placeholder.com/40" alt="Profile" />
-          <i class="fa fa-user" aria-hidden="true"></i>
+        <div className={styles.profile}>
+          <img src="../../public/vite.svg" alt="Profile" />
+          <i className="fa fa-user" aria-hidden="true"></i>
 
           <span id="john-name">Tendo</span>
         </div>

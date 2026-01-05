@@ -1,8 +1,9 @@
 import React from "react";
+import styles from "./MovieCard.css";
 
 const MovieCard = () => {
   return (
-    <div className="movie-card">
+    <div className={styles.movie_card}>
       <img
         src="./assets/big-sur-4k_1608574481.png"
         alt="Movie cover"
